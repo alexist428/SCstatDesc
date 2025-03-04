@@ -1,0 +1,4596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Eurobact-2 Sources and Source control</title>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.accessiblecaption
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.activelink
+{
+  color: #800080;
+}
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.link
+{
+  color: #0000FF;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.visitedlink
+{
+  color: #800080;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle"><span class="c" style=" font-size: 24pt; font-weight: bold;">Catheter sources HA-BSI &amp; source-control in the Eurobact-2 database</span></td>
+</tr>
+</table><br>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><a name='top'></a></td>
+</tr>
+</table>
+<div class="branch">
+<a name="IDX1"></a>
+<div>
+<div class="l paragraph">Table of Contents</div>
+<div class="l paragraph"><span class="c"><a href="#CatheterSRC">1 Catheter source of HA-BSI</a>
+</span></div>
+<div class="l paragraph"><span class="c"><a href="#CATHSC">2 Source control for Cath</a>
+</span></div>
+<div class="l paragraph"><span class="c"><a href="#CATHOUTCOME"> 3 Some outcome data</a>
+</span></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX2"></a>
+<div>
+<div class="l paragraph" style=" font-size: 20pt; font-weight: bold;">Catheter-related infection (CRBSI) sources of HA-BSI</div>
+<div class="l paragraph">description of this subgroup.</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><a name='CatheterSRC'></a></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX3"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">How many had Catheter as the most likely source of infection / as one of possible sources</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: One-Way Frequencies">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Most likely source of HA-BSI</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">MostLikelySrc</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Catheter</th>
+<td class="r data">676</td>
+<td class="r data">26.18</td>
+<td class="r data">676</td>
+<td class="r data">26.18</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Intra-abdominal</th>
+<td class="r data">391</td>
+<td class="r data">15.14</td>
+<td class="r data">1067</td>
+<td class="r data">41.32</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Other</th>
+<td class="r data">217</td>
+<td class="r data">8.40</td>
+<td class="r data">1284</td>
+<td class="r data">49.73</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Primary</th>
+<td class="r data">424</td>
+<td class="r data">16.42</td>
+<td class="r data">1708</td>
+<td class="r data">66.15</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Respiratory</th>
+<td class="r data">688</td>
+<td class="r data">26.65</td>
+<td class="r data">2396</td>
+<td class="r data">92.80</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Urinary</th>
+<td class="r data">186</td>
+<td class="r data">7.20</td>
+<td class="r data">2582</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX4"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: One-Way Frequencies">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">At least one Catheter source</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">SRChasCath</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">1623</td>
+<td class="r data">62.86</td>
+<td class="r data">1623</td>
+<td class="r data">62.86</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">959</td>
+<td class="r data">37.14</td>
+<td class="r data">2582</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX5"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: LIST Frequencies">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">MostLikelySrcNUM</th>
+<th class="r b header" scope="col">SRChasCath</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Catheter</th>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">676</td>
+<td class="r data">26.18</td>
+<td class="r data">676</td>
+<td class="r data">26.18</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">IntraAbdominal</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">339</td>
+<td class="r data">13.13</td>
+<td class="r data">1015</td>
+<td class="r data">39.31</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">IntraAbdominal</th>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">52</td>
+<td class="r data">2.01</td>
+<td class="r data">1067</td>
+<td class="r data">41.32</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Other</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">192</td>
+<td class="r data">7.44</td>
+<td class="r data">1259</td>
+<td class="r data">48.76</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Other</th>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">25</td>
+<td class="r data">0.97</td>
+<td class="r data">1284</td>
+<td class="r data">49.73</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Primary</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">362</td>
+<td class="r data">14.02</td>
+<td class="r data">1646</td>
+<td class="r data">63.75</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Primary</th>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">62</td>
+<td class="r data">2.40</td>
+<td class="r data">1708</td>
+<td class="r data">66.15</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Respiratory</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">565</td>
+<td class="r data">21.88</td>
+<td class="r data">2273</td>
+<td class="r data">88.03</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Respiratory</th>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">123</td>
+<td class="r data">4.76</td>
+<td class="r data">2396</td>
+<td class="r data">92.80</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Urinary</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">165</td>
+<td class="r data">6.39</td>
+<td class="r data">2561</td>
+<td class="r data">99.19</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Urinary</th>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">21</td>
+<td class="r data">0.81</td>
+<td class="r data">2582</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX6"></a>
+<div>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><p style='text-align:right;'><a href='#top'>Top of report</a></p></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX7"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">catheter as only source</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: One-Way Frequencies">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source1</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Catheter</th>
+<td class="r data">490</td>
+<td class="r data">100.00</td>
+<td class="r data">490</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX8"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">catheter as most likely source</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: One-Way Frequencies">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source1</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Catheter</th>
+<td class="r data">676</td>
+<td class="r data">100.00</td>
+<td class="r data">676</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX9"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">There is a Catheter as a source, but its secondary  (ie not most likely)</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: One-Way Frequencies">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source1</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Endocarditis</th>
+<td class="r data">2</td>
+<td class="r data">0.72</td>
+<td class="r data">2</td>
+<td class="r data">0.72</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IAbdo_Biliary</th>
+<td class="r data">8</td>
+<td class="r data">2.89</td>
+<td class="r data">10</td>
+<td class="r data">3.61</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IAbdo_Other_IAI</th>
+<td class="r data">22</td>
+<td class="r data">7.94</td>
+<td class="r data">32</td>
+<td class="r data">11.55</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IAbdo_Peritonitis</th>
+<td class="r data">19</td>
+<td class="r data">6.86</td>
+<td class="r data">51</td>
+<td class="r data">18.41</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Mediastinitis</th>
+<td class="r data">2</td>
+<td class="r data">0.72</td>
+<td class="r data">53</td>
+<td class="r data">19.13</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Other</th>
+<td class="r data">2</td>
+<td class="r data">0.72</td>
+<td class="r data">55</td>
+<td class="r data">19.86</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Primary</th>
+<td class="r data">60</td>
+<td class="r data">21.66</td>
+<td class="r data">115</td>
+<td class="r data">41.52</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Resp_Pleural-Empyema</th>
+<td class="r data">3</td>
+<td class="r data">1.08</td>
+<td class="r data">118</td>
+<td class="r data">42.60</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Resp_Pneumonia</th>
+<td class="r data">116</td>
+<td class="r data">41.88</td>
+<td class="r data">234</td>
+<td class="r data">84.48</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Resp_TracheoBronchitis</th>
+<td class="r data">3</td>
+<td class="r data">1.08</td>
+<td class="r data">237</td>
+<td class="r data">85.56</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Tissue_Joint</th>
+<td class="r data">4</td>
+<td class="r data">1.44</td>
+<td class="r data">241</td>
+<td class="r data">87.00</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Tissue_Necrotizing_fasciitis</th>
+<td class="r data">3</td>
+<td class="r data">1.08</td>
+<td class="r data">244</td>
+<td class="r data">88.09</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Tissue_Other_Tissue</th>
+<td class="r data">12</td>
+<td class="r data">4.33</td>
+<td class="r data">256</td>
+<td class="r data">92.42</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Urinary</th>
+<td class="r data">21</td>
+<td class="r data">7.58</td>
+<td class="r data">277</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX10"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: One-Way Frequencies">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source2</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Catheter</th>
+<td class="r data">209</td>
+<td class="r data">75.45</td>
+<td class="r data">209</td>
+<td class="r data">75.45</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IAbdo_Biliary</th>
+<td class="r data">1</td>
+<td class="r data">0.36</td>
+<td class="r data">210</td>
+<td class="r data">75.81</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IAbdo_Other_IAI</th>
+<td class="r data">7</td>
+<td class="r data">2.53</td>
+<td class="r data">217</td>
+<td class="r data">78.34</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IAbdo_Peritonitis</th>
+<td class="r data">5</td>
+<td class="r data">1.81</td>
+<td class="r data">222</td>
+<td class="r data">80.14</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Mediastinitis</th>
+<td class="r data">2</td>
+<td class="r data">0.72</td>
+<td class="r data">224</td>
+<td class="r data">80.87</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Other</th>
+<td class="r data">3</td>
+<td class="r data">1.08</td>
+<td class="r data">227</td>
+<td class="r data">81.95</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Primary</th>
+<td class="r data">14</td>
+<td class="r data">5.05</td>
+<td class="r data">241</td>
+<td class="r data">87.00</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Resp_Pneumonia</th>
+<td class="r data">14</td>
+<td class="r data">5.05</td>
+<td class="r data">255</td>
+<td class="r data">92.06</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Resp_TracheoBronchitis</th>
+<td class="r data">1</td>
+<td class="r data">0.36</td>
+<td class="r data">256</td>
+<td class="r data">92.42</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Tissue_Joint</th>
+<td class="r data">2</td>
+<td class="r data">0.72</td>
+<td class="r data">258</td>
+<td class="r data">93.14</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Tissue_Other_Tissue</th>
+<td class="r data">6</td>
+<td class="r data">2.17</td>
+<td class="r data">264</td>
+<td class="r data">95.31</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Urinary</th>
+<td class="r data">13</td>
+<td class="r data">4.69</td>
+<td class="r data">277</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX11"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: One-Way Frequencies">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source3</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Catheter</th>
+<td class="r data">61</td>
+<td class="r data">51.26</td>
+<td class="r data">61</td>
+<td class="r data">51.26</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IAbdo_Biliary</th>
+<td class="r data">2</td>
+<td class="r data">1.68</td>
+<td class="r data">63</td>
+<td class="r data">52.94</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IAbdo_Other_IAI</th>
+<td class="r data">7</td>
+<td class="r data">5.88</td>
+<td class="r data">70</td>
+<td class="r data">58.82</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IAbdo_Peritonitis</th>
+<td class="r data">2</td>
+<td class="r data">1.68</td>
+<td class="r data">72</td>
+<td class="r data">60.50</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Other</th>
+<td class="r data">2</td>
+<td class="r data">1.68</td>
+<td class="r data">74</td>
+<td class="r data">62.18</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Primary</th>
+<td class="r data">10</td>
+<td class="r data">8.40</td>
+<td class="r data">84</td>
+<td class="r data">70.59</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Resp_Pneumonia</th>
+<td class="r data">13</td>
+<td class="r data">10.92</td>
+<td class="r data">97</td>
+<td class="r data">81.51</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Resp_TracheoBronchitis</th>
+<td class="r data">1</td>
+<td class="r data">0.84</td>
+<td class="r data">98</td>
+<td class="r data">82.35</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Tissue_Other_Tissue</th>
+<td class="r data">3</td>
+<td class="r data">2.52</td>
+<td class="r data">101</td>
+<td class="r data">84.87</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Urinary</th>
+<td class="r data">18</td>
+<td class="r data">15.13</td>
+<td class="r data">119</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th class="c b footer" colspan="5">Frequency Missing = 158</th>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX12"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: One-Way Frequencies">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Source4</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Catheter</th>
+<td class="r data">7</td>
+<td class="r data">24.14</td>
+<td class="r data">7</td>
+<td class="r data">24.14</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IAbdo_Other_IAI</th>
+<td class="r data">2</td>
+<td class="r data">6.90</td>
+<td class="r data">9</td>
+<td class="r data">31.03</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Mediastinitis</th>
+<td class="r data">1</td>
+<td class="r data">3.45</td>
+<td class="r data">10</td>
+<td class="r data">34.48</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Other</th>
+<td class="r data">1</td>
+<td class="r data">3.45</td>
+<td class="r data">11</td>
+<td class="r data">37.93</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Primary</th>
+<td class="r data">4</td>
+<td class="r data">13.79</td>
+<td class="r data">15</td>
+<td class="r data">51.72</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Resp_Pneumonia</th>
+<td class="r data">5</td>
+<td class="r data">17.24</td>
+<td class="r data">20</td>
+<td class="r data">68.97</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Resp_TracheoBronchitis</th>
+<td class="r data">1</td>
+<td class="r data">3.45</td>
+<td class="r data">21</td>
+<td class="r data">72.41</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Tissue_Joint</th>
+<td class="r data">1</td>
+<td class="r data">3.45</td>
+<td class="r data">22</td>
+<td class="r data">75.86</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Tissue_Other_Tissue</th>
+<td class="r data">2</td>
+<td class="r data">6.90</td>
+<td class="r data">24</td>
+<td class="r data">82.76</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Tissue_Spine</th>
+<td class="r data">1</td>
+<td class="r data">3.45</td>
+<td class="r data">25</td>
+<td class="r data">86.21</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Urinary</th>
+<td class="r data">4</td>
+<td class="r data">13.79</td>
+<td class="r data">29</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th class="c b footer" colspan="5">Frequency Missing = 248</th>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><a name='CATHSC'></a></td>
+</tr>
+</table>
+<div class="branch">
+<a name="IDX13"></a>
+<div>
+<div class="l paragraph" style=" font-size: 16pt; font-weight: bold;">Source control for Catehter related bloodstream infections</div>
+<div class="l paragraph" style=" font-size: 16pt; font-weight: bold;">there is some data cleaning to do, i checked many of the files where SC was not ticked are pretty bad quality and no responses to reviewing</div>
+<div class="l paragraph" style=" font-size: 16pt; font-weight: bold;">i will do that later once the methods are settled</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX14"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">for all levels of catheter source ie most likely or not</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table  summary="Page Layout"><tr>
+<td class="c t"><div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+</colgroup>
+<tbody>
+<tr>
+<th class="l t stacked_cell header" scope="col"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l t header top_stacked_value" scope="col">Frequency</th>
+</tr>
+<tr>
+<th class="l t header middle_stacked_value" scope="col">Percent</th>
+</tr>
+<tr>
+<th class="l t header middle_stacked_value" scope="col">Row Pct</th>
+</tr>
+<tr>
+<th class="l t header bottom_stacked_value" scope="col">Col Pct</th>
+</tr>
+</table></th>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c header" colspan="3" scope="colgroup">Table&nbsp;of&nbsp;scReq&nbsp;by&nbsp;SRChasCath</th>
+</tr>
+<tr>
+<th class="c b header" rowspan="2" scope="col">scReq(Was source control required?)</th>
+<th class="c b header" colspan="2" scope="colgroup">SRChasCath(At least one<br/>Catheter source)</th>
+</tr>
+<tr>
+<th class="r header" scope="col">         1</th>
+<th class="r header" scope="col">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">Not required                            </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">92</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">9.59</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">9.59</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">92</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">9.59</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Required, Achieved                      </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">752</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">78.42</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">78.42</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">752</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">78.42</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Source control REQUIRED but NOT achieved</th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">115</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">11.99</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">11.99</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">115</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">11.99</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Total                                   </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">959</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">100.00</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">959</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">100.00</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</tr>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX15"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">now only if cath most likely</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table  summary="Page Layout"><tr>
+<td class="c t"><div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+</colgroup>
+<tbody>
+<tr>
+<th class="l t stacked_cell header" scope="col"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l t header top_stacked_value" scope="col">Frequency</th>
+</tr>
+<tr>
+<th class="l t header middle_stacked_value" scope="col">Percent</th>
+</tr>
+<tr>
+<th class="l t header middle_stacked_value" scope="col">Row Pct</th>
+</tr>
+<tr>
+<th class="l t header bottom_stacked_value" scope="col">Col Pct</th>
+</tr>
+</table></th>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c header" colspan="3" scope="colgroup">Table&nbsp;of&nbsp;scReq&nbsp;by&nbsp;Source1</th>
+</tr>
+<tr>
+<th class="c b header" rowspan="2" scope="col">scReq(Was source control required?)</th>
+<th class="c b header" colspan="2" scope="colgroup">Source1</th>
+</tr>
+<tr>
+<th class="r header" scope="col">Catheter</th>
+<th class="r header" scope="col">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">Not required                            </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">42</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">6.21</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">6.21</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">42</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">6.21</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Required, Achieved                      </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">558</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">82.54</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">82.54</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">558</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">82.54</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Source control REQUIRED but NOT achieved</th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">76</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">11.24</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">11.24</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">76</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">11.24</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Total                                   </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">676</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">100.00</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">676</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">100.00</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</tr>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX16"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">now lets look at time to SC</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Means: Summary statistics">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Variable</th>
+<th class="l b header" scope="col">Label</th>
+<th class="r b header" scope="col">N</th>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">Median</th>
+<th class="r b header" scope="col">Lower Quartile</th>
+<th class="r b header" scope="col">Upper Quartile</th>
+<th class="r b header" scope="col">Quartile Range</th>
+<th class="r b header" scope="col">Minimum</th>
+<th class="r b header" scope="col">Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">SCCathDelay_hours</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">SCCathDelay_days</th>
+</tr>
+</table></th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">Delay to Catheter SC (hours)</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">Delay to Catheter SC (days)</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">580</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">580</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">46.0356034</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">1.6206897</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">24.3416667</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">1.0000000</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.6916667</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">70.6250000</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">2.0000000</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">68.9333333</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">2.0000000</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value" nowrap>-278.8166667</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value" nowrap>-11.0000000</td>
+</tr>
+</table></td>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">691.3666667</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">28.0000000</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX17"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Was Cath SC done within 24h of BSI</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: One-Way Frequencies">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Delay to Catheter SC is &lt;24h binary)</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">SCCathDelay_binary</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">Late or Not removed</th>
+<td class="r data">394</td>
+<td class="r data">58.28</td>
+<td class="r data">394</td>
+<td class="r data">58.28</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Cath rem &lt; 24h</th>
+<td class="r data">282</td>
+<td class="r data">41.72</td>
+<td class="r data">676</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX18"></a>
+<div>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot1.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX19"></a>
+<div>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot2.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX20"></a>
+<div>
+<div class="l paragraph" style=" font-size: 16pt; font-weight: bold;">reminder need to decide what to do with those that did not get a cath removal (? exclude ? most of them will be anyways due to data quality) and those that failed SC</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<a name="IDX21"></a>
+<div>
+<div class="l paragraph" style=" font-size: 16pt; font-weight: bold;">how to manage days to cath removal as first day = 0 or 1 see both variables PLUS1 </div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX22"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">who had cath removed by 24h</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set ES.PF">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">dtBsi</th>
+<th class="r header" scope="col">RSCCathDateTime</th>
+<th class="r header" scope="col">SCCathDelay_hours</th>
+<th class="r header" scope="col">SCCathDelay_days</th>
+<th class="r header" scope="col">SCCathDelay_daysPlus1</th>
+<th class="r header" scope="col">d28Status</th>
+<th class="r header" scope="col">dead_by_d28</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">2152</th>
+<td class="r data">15NOV19:12:58:00</td>
+<td class="r data">16NOV2019:12:00:00</td>
+<td class="r data">23.03</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2153</th>
+<td class="r data">28JAN21:12:48:00</td>
+<td class="r data">29JAN2021:12:00:00</td>
+<td class="r data">23.20</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2155</th>
+<td class="r data">03DEC20:13:38:00</td>
+<td class="r data">04DEC2020:13:01:00</td>
+<td class="r data">23.38</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2156</th>
+<td class="r data">04JAN20:01:10:00</td>
+<td class="r data">05JAN2020:00:36:00</td>
+<td class="r data">23.43</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2158</th>
+<td class="r data">16NOV19:10:26:00</td>
+<td class="r data">17NOV2019:10:00:00</td>
+<td class="r data">23.57</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2159</th>
+<td class="r data">29SEP19:14:21:00</td>
+<td class="r data">30SEP2019:14:00:00</td>
+<td class="r data">23.65</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2160</th>
+<td class="r data">14DEC20:12:21:00</td>
+<td class="r data">15DEC2020:12:00:00</td>
+<td class="r data">23.65</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2161</th>
+<td class="r data">04SEP19:10:51:00</td>
+<td class="r data">05SEP2019:10:35:00</td>
+<td class="r data">23.73</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2162</th>
+<td class="r data">27MAY20:11:00:00</td>
+<td class="r data">28MAY2020:11:00:00</td>
+<td class="r data">24.00</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2163</th>
+<td class="r data">22OCT19:16:00:00</td>
+<td class="r data">23OCT2019:16:00:00</td>
+<td class="r data">24.00</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2165</th>
+<td class="r data">12JAN20:12:00:00</td>
+<td class="r data">13JAN2020:12:00:00</td>
+<td class="r data">24.00</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2167</th>
+<td class="r data">24SEP20:11:00:00</td>
+<td class="r data">25SEP2020:11:11:00</td>
+<td class="r data">24.18</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2168</th>
+<td class="r data">21MAY20:11:15:00</td>
+<td class="r data">22MAY2020:11:30:00</td>
+<td class="r data">24.25</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2169</th>
+<td class="r data">29JAN20:17:45:00</td>
+<td class="r data">30JAN2020:18:00:00</td>
+<td class="r data">24.25</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2170</th>
+<td class="r data">01DEC20:19:07:00</td>
+<td class="r data">02DEC2020:19:25:00</td>
+<td class="r data">24.30</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2171</th>
+<td class="r data">10JAN20:11:40:00</td>
+<td class="r data">11JAN2020:12:00:00</td>
+<td class="r data">24.33</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2172</th>
+<td class="r data">18OCT19:18:55:00</td>
+<td class="r data">19OCT2019:19:16:00</td>
+<td class="r data">24.35</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2173</th>
+<td class="r data">12AUG20:11:47:00</td>
+<td class="r data">13AUG2020:12:10:00</td>
+<td class="r data">24.38</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2174</th>
+<td class="r data">10SEP19:09:30:00</td>
+<td class="r data">11SEP2019:10:00:00</td>
+<td class="r data">24.50</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2176</th>
+<td class="r data">09JAN20:09:15:00</td>
+<td class="r data">10JAN2020:10:00:00</td>
+<td class="r data">24.75</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2177</th>
+<td class="r data">05MAR20:15:54:00</td>
+<td class="r data">06MAR2020:16:51:00</td>
+<td class="r data">24.95</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2178</th>
+<td class="r data">20MAY20:12:00:00</td>
+<td class="r data">21MAY2020:13:00:00</td>
+<td class="r data">25.00</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2179</th>
+<td class="r data">08DEC20:12:00:00</td>
+<td class="r data">09DEC2020:13:00:00</td>
+<td class="r data">25.00</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2184</th>
+<td class="r data">17AUG20:15:01:00</td>
+<td class="r data">18AUG2020:16:30:00</td>
+<td class="r data">25.48</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2185</th>
+<td class="r data">22NOV19:10:00:00</td>
+<td class="r data">23NOV2019:11:30:00</td>
+<td class="r data">25.50</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2186</th>
+<td class="r data">27MAY20:11:30:00</td>
+<td class="r data">28MAY2020:13:20:00</td>
+<td class="r data">25.83</td>
+<td class="r data">1</td>
+<td class="r data">2</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX23"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">see negative delays to removal - removed before bsi - i think that less than 12 or 24h before we should keep and remove the ones that were removed long before as they may be unrelated</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set ES.PF">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">dtBsi</th>
+<th class="r header" scope="col">RSCCathDateTime</th>
+<th class="r header" scope="col">SCCathDelay_hours</th>
+<th class="r header" scope="col">SCCathDelay_days</th>
+<th class="r header" scope="col">SCCathDelay_daysPlus1</th>
+<th class="r header" scope="col">d28Status</th>
+<th class="r header" scope="col">dead_by_d28</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1801</th>
+<td class="r data">19NOV20:10:11:00</td>
+<td class="r data">07NOV2020:19:22:00</td>
+<td class="r data" nowrap>-278.82</td>
+<td class="r data" nowrap>-11</td>
+<td class="r data" nowrap>-10</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1804</th>
+<td class="r data">24MAY20:12:56:00</td>
+<td class="r data">14MAY2020:10:40:00</td>
+<td class="r data" nowrap>-242.27</td>
+<td class="r data" nowrap>-10</td>
+<td class="r data" nowrap>-9</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1805</th>
+<td class="r data">24OCT19:08:01:00</td>
+<td class="r data">15OCT2019:12:00:00</td>
+<td class="r data" nowrap>-212.02</td>
+<td class="r data" nowrap>-8</td>
+<td class="r data" nowrap>-7</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1806</th>
+<td class="r data">27FEB20:19:39:00</td>
+<td class="r data">20FEB2020:13:00:00</td>
+<td class="r data" nowrap>-174.65</td>
+<td class="r data" nowrap>-7</td>
+<td class="r data" nowrap>-6</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1807</th>
+<td class="r data">26FEB20:08:38:00</td>
+<td class="r data">19FEB2020:18:00:00</td>
+<td class="r data" nowrap>-158.63</td>
+<td class="r data" nowrap>-6</td>
+<td class="r data" nowrap>-5</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1808</th>
+<td class="r data">29SEP19:13:00:00</td>
+<td class="r data">23SEP2019:12:00:00</td>
+<td class="r data" nowrap>-145.00</td>
+<td class="r data" nowrap>-6</td>
+<td class="r data" nowrap>-5</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1809</th>
+<td class="r data">12NOV19:11:16:00</td>
+<td class="r data">07NOV2019:00:18:00</td>
+<td class="r data" nowrap>-130.97</td>
+<td class="r data" nowrap>-5</td>
+<td class="r data" nowrap>-4</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1810</th>
+<td class="r data">11NOV19:14:30:00</td>
+<td class="r data">06NOV2019:16:25:00</td>
+<td class="r data" nowrap>-118.08</td>
+<td class="r data" nowrap>-4</td>
+<td class="r data" nowrap>-3</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1811</th>
+<td class="r data">14OCT19:00:05:00</td>
+<td class="r data">10OCT2019:14:20:00</td>
+<td class="r data" nowrap>-81.75</td>
+<td class="r data" nowrap>-3</td>
+<td class="r data" nowrap>-2</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1812</th>
+<td class="r data">06APR20:12:00:00</td>
+<td class="r data">03APR2020:12:00:00</td>
+<td class="r data" nowrap>-72.00</td>
+<td class="r data" nowrap>-3</td>
+<td class="r data" nowrap>-2</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1813</th>
+<td class="r data">25NOV19:10:09:00</td>
+<td class="r data">22NOV2019:13:00:00</td>
+<td class="r data" nowrap>-69.15</td>
+<td class="r data" nowrap>-2</td>
+<td class="r data" nowrap>-1</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1816</th>
+<td class="r data">20SEP19:10:27:00</td>
+<td class="r data">18SEP2019:13:14:00</td>
+<td class="r data" nowrap>-45.22</td>
+<td class="r data" nowrap>-1</td>
+<td class="r data">0</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1817</th>
+<td class="r data">18JUN20:09:00:00</td>
+<td class="r data">16JUN2020:14:00:00</td>
+<td class="r data" nowrap>-43.00</td>
+<td class="r data" nowrap>-1</td>
+<td class="r data">0</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1818</th>
+<td class="r data">05MAY20:12:20:00</td>
+<td class="r data">03MAY2020:19:10:00</td>
+<td class="r data" nowrap>-41.17</td>
+<td class="r data" nowrap>-1</td>
+<td class="r data">0</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1819</th>
+<td class="r data">17JAN20:19:40:00</td>
+<td class="r data">16JAN2020:09:00:00</td>
+<td class="r data" nowrap>-34.67</td>
+<td class="r data" nowrap>-1</td>
+<td class="r data">0</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1820</th>
+<td class="r data">04AUG20:16:15:00</td>
+<td class="r data">03AUG2020:09:30:00</td>
+<td class="r data" nowrap>-30.75</td>
+<td class="r data" nowrap>-1</td>
+<td class="r data">0</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1821</th>
+<td class="r data">03OCT20:13:32:00</td>
+<td class="r data">02OCT2020:07:30:00</td>
+<td class="r data" nowrap>-30.03</td>
+<td class="r data" nowrap>-1</td>
+<td class="r data">0</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1822</th>
+<td class="r data">19APR20:16:28:00</td>
+<td class="r data">18APR2020:11:00:00</td>
+<td class="r data" nowrap>-29.47</td>
+<td class="r data" nowrap>-1</td>
+<td class="r data">0</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1824</th>
+<td class="r data">23APR20:16:37:00</td>
+<td class="r data">22APR2020:17:00:00</td>
+<td class="r data" nowrap>-23.62</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1825</th>
+<td class="r data">13JUN19:10:43:00</td>
+<td class="r data">12JUN2019:13:00:00</td>
+<td class="r data" nowrap>-21.72</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1826</th>
+<td class="r data">17MAR20:10:57:00</td>
+<td class="r data">16MAR2020:14:10:00</td>
+<td class="r data" nowrap>-20.78</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1829</th>
+<td class="r data">05APR20:10:00:00</td>
+<td class="r data">04APR2020:16:00:00</td>
+<td class="r data" nowrap>-18.00</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1830</th>
+<td class="r data">26NOV19:09:28:00</td>
+<td class="r data">25NOV2019:15:40:00</td>
+<td class="r data" nowrap>-17.80</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1831</th>
+<td class="r data">14JAN21:20:24:00</td>
+<td class="r data">14JAN2021:03:36:00</td>
+<td class="r data" nowrap>-16.80</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1832</th>
+<td class="r data">25NOV19:19:12:00</td>
+<td class="r data">25NOV2019:02:42:00</td>
+<td class="r data" nowrap>-16.50</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1833</th>
+<td class="r data">26SEP19:06:00:00</td>
+<td class="r data">25SEP2019:14:15:00</td>
+<td class="r data" nowrap>-15.75</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1834</th>
+<td class="r data">01JUL20:15:27:00</td>
+<td class="r data">01JUL2020:00:00:00</td>
+<td class="r data" nowrap>-15.45</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1835</th>
+<td class="r data">27FEB20:17:14:00</td>
+<td class="r data">27FEB2020:01:50:00</td>
+<td class="r data" nowrap>-15.40</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1836</th>
+<td class="r data">22AUG19:16:00:00</td>
+<td class="r data">22AUG2019:01:00:00</td>
+<td class="r data" nowrap>-15.00</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Discharged from the Hospital</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1837</th>
+<td class="r data">19OCT19:22:14:00</td>
+<td class="r data">19OCT2019:08:31:00</td>
+<td class="r data" nowrap>-13.72</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1838</th>
+<td class="r data">03APR20:23:43:00</td>
+<td class="r data">03APR2020:10:15:00</td>
+<td class="r data" nowrap>-13.47</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1839</th>
+<td class="r data">31MAR20:13:04:00</td>
+<td class="r data">31MAR2020:00:00:00</td>
+<td class="r data" nowrap>-13.07</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Alive in the ICU</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1840</th>
+<td class="r data">07NOV19:23:15:00</td>
+<td class="r data">07NOV2019:11:00:00</td>
+<td class="r data" nowrap>-12.25</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><a name='CATHOUTCOME'></a></td>
+</tr>
+</table>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX24"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Relationship with d28 outcomes</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table  summary="Page Layout"><tr>
+<td class="c t"><div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+</colgroup>
+<tbody>
+<tr>
+<th class="l t stacked_cell header" scope="col"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l t header top_stacked_value" scope="col">Frequency</th>
+</tr>
+<tr>
+<th class="l t header middle_stacked_value" scope="col">Percent</th>
+</tr>
+<tr>
+<th class="l t header middle_stacked_value" scope="col">Row Pct</th>
+</tr>
+<tr>
+<th class="l t header bottom_stacked_value" scope="col">Col Pct</th>
+</tr>
+</table></th>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td><div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c header" colspan="4" scope="colgroup">Table&nbsp;of&nbsp;groupeJ28&nbsp;by&nbsp;SCCathDelay_binary</th>
+</tr>
+<tr>
+<th class="c b header" rowspan="2" scope="col">groupeJ28</th>
+<th class="c b header" colspan="3" scope="colgroup">SCCathDelay_binary(Delay to Catheter<br/>SC is &lt;24h binary))</th>
+</tr>
+<tr>
+<th class="r header" scope="col">Late or Not removed</th>
+<th class="r header" scope="col">Cath rem &lt; 24h</th>
+<th class="r header" scope="col">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">Dead </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">155</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">22.93</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">64.85</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">39.34</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">84</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">12.43</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">35.15</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">29.79</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">239</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">35.36</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Alive</th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">239</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">35.36</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">54.69</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">60.66</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">198</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">29.29</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">45.31</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">70.21</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">437</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">64.64</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Total</th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">394</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">58.28</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">282</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">41.72</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">676</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">100.00</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</tr>
+</table>
+</div>
+</div>
+<br>
+<br>
+<p>
+<div align="center"><table class="proctitle"><tr><td class="c proctitle">Statistics for Table of groupeJ28 by SCCathDelay_binary</td></tr></table>
+</div><p>
+<a name="IDX25"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: Chi-Square Tests">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b header" scope="col">Statistic</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Value</th>
+<th class="r b header" scope="col">Prob</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Chi-Square</th>
+<td class="r data">1</td>
+<td class="r data">6.5627</td>
+<td class="r data">0.0104</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Likelihood Ratio Chi-Square</th>
+<td class="r data">1</td>
+<td class="r data">6.6241</td>
+<td class="r data">0.0101</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Continuity Adj. Chi-Square</th>
+<td class="r data">1</td>
+<td class="r data">6.1513</td>
+<td class="r data">0.0131</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Mantel-Haenszel Chi-Square</th>
+<td class="r data">1</td>
+<td class="r data">6.5530</td>
+<td class="r data">0.0105</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Phi Coefficient</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">0.0985</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Contingency Coefficient</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">0.0981</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Cramer&#39;s V</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">0.0985</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX26"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: Fisher&apos;s Exact Test">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Fisher&#39;s Exact Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Cell (1,1) Frequency (F)</th>
+<td class="r data">155</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Left-sided Pr &lt;= F</th>
+<td class="r data">0.9960</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Right-sided Pr &gt;= F</th>
+<td class="r data">0.0064</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Table Probability (P)</th>
+<td class="r data">0.0024</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Two-sided Pr &lt;= P</th>
+<td class="r data">0.0114</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<br>
+<p>
+<div align="center"><table class="proctitle"><tr><td class="c proctitle">Sample Size = 676</td></tr></table>
+</div><p>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX27"></a>
+<div>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot3.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX28"></a>
+<div>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot4.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX29"></a>
+<div>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SGPlot5.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX30"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">death by day 1</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Freq: One-Way Frequencies">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">dead_by_d1</th>
+<th class="r b header" scope="col">Frequency</th>
+<th class="r b header" scope="col"> Percent</th>
+<th class="r b header" scope="col">Cumulative<br/> Frequency</th>
+<th class="r b header" scope="col">Cumulative<br/>  Percent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">674</td>
+<td class="r data">99.70</td>
+<td class="r data">674</td>
+<td class="r data">99.70</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2</td>
+<td class="r data">0.30</td>
+<td class="r data">676</td>
+<td class="r data">100.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX31"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">i would like to check we have the right death by d1 (time of bsi and less than 24h after</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set ES.PF">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">dtBsi</th>
+<th class="r header" scope="col">d28Death</th>
+<th class="r header" scope="col">time_to_death</th>
+<th class="r header" scope="col">delay_FirstBSI_d28Death</th>
+<th class="r header" scope="col">groupeJ28</th>
+<th class="r header" scope="col">d28Status</th>
+<th class="r header" scope="col">dead_by_d28</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1653</th>
+<td class="r data">09DEC19:08:00:00</td>
+<td class="r data">09/12/2019</td>
+<td class="r data">1</td>
+<td class="r data">1</td>
+<td class="r data">Dead</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1655</th>
+<td class="r data">01DEC20:09:32:00</td>
+<td class="r data">01/12/2020</td>
+<td class="r data">1</td>
+<td class="r data">1</td>
+<td class="r data">Dead</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1666</th>
+<td class="r data">28DEC20:16:00:00</td>
+<td class="r data">29/12/2020</td>
+<td class="r data">2</td>
+<td class="r data">2</td>
+<td class="r data">Dead</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1676</th>
+<td class="r data">11NOV20:06:00:00</td>
+<td class="r data">12/11/2020</td>
+<td class="r data">2</td>
+<td class="r data">2</td>
+<td class="r data">Dead</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1696</th>
+<td class="r data">28OCT20:14:58:00</td>
+<td class="r data">29/10/2020</td>
+<td class="r data">2</td>
+<td class="r data">2</td>
+<td class="r data">Dead</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1706</th>
+<td class="r data">05DEC20:16:52:00</td>
+<td class="r data">06/12/2020</td>
+<td class="r data">2</td>
+<td class="r data">2</td>
+<td class="r data">Dead</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1722</th>
+<td class="r data">10NOV20:16:34:00</td>
+<td class="r data">11/11/2020</td>
+<td class="r data">2</td>
+<td class="r data">2</td>
+<td class="r data">Dead</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1723</th>
+<td class="r data">30JAN20:11:26:00</td>
+<td class="r data">31/01/2020</td>
+<td class="r data">2</td>
+<td class="r data">2</td>
+<td class="r data">Dead</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1724</th>
+<td class="r data">19DEC20:13:50:00</td>
+<td class="r data">20/12/2020</td>
+<td class="r data">2</td>
+<td class="r data">2</td>
+<td class="r data">Dead</td>
+<td class="r data">Death in the ICU</td>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX32"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Kaplan-Meier Survival Estimates</td>
+</tr>
+<tr>
+<td class="c systemtitle2">By Catheter Removal Status (Catheter Source Only)</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Lifetest: Censored Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Summary of the Number of Censored and Uncensored Values</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Stratum</th>
+<th class="l b header" scope="col">SCCathDelay_binary</th>
+<th class="r b header" scope="col">Total</th>
+<th class="r b header" scope="col">Failed</th>
+<th class="r b header" scope="col">Censored</th>
+<th class="r b header" scope="col"> Percent<br/>Censored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<th class="l data">Cath rem &lt; 24h</th>
+<td class="r data">282</td>
+<td class="r data">84</td>
+<td class="r data">198</td>
+<td class="r data">70.21</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<th class="l data">Late or Not removed</th>
+<td class="r data">394</td>
+<td class="r data">155</td>
+<td class="r data">239</td>
+<td class="r data">60.66</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">Total</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">676</td>
+<td class="r data">239</td>
+<td class="r data">437</td>
+<td class="r data">64.64</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX33"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Kaplan-Meier Survival Estimates</td>
+</tr>
+<tr>
+<td class="c systemtitle2">By Catheter Removal Status (Catheter Source Only)</td>
+</tr>
+</table><br>
+<br>
+<p>
+<div align="center"><table class="proctitle"><tr><td class="c proctitle">Testing Homogeneity of Survival Curves for survival_time over Strata</td></tr></table>
+</div><p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Lifetest: Rank Statistics">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Rank Statistics</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">SCCathDelay_binary</th>
+<th class="r b header" scope="col">Log-Rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Cath rem &lt; 24h</th>
+<td class="r data" nowrap>-19.609</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Late or Not removed</th>
+<td class="r data">19.609</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX34"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Lifetest: Log-Rank Covariance">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Covariance Matrix for the Log-Rank Statistics</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">SCCathDelay_binary</th>
+<th class="r b header" scope="col">Cath rem &lt; 24h</th>
+<th class="r b header" scope="col">Late or Not removed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Cath rem &lt; 24h</th>
+<td class="r data">57.6066</td>
+<td class="r data" nowrap>-57.6066</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Late or Not removed</th>
+<td class="r data" nowrap>-57.6066</td>
+<td class="r data">57.6066</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX35"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Lifetest: Homogeneity Tests">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Test of Equality over Strata</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="c b header" scope="col">Pr &gt;<br/>Chi-Square</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Log-Rank</th>
+<td class="r data">6.6746</td>
+<td class="r data">1</td>
+<td class="r data">0.0098</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX36"></a>
+<div>
+<div  class="c">
+<img alt="Product-Limit Survival Curves with Number of Subjects at Risk and 95% Hall-Wellner Bands" src="Catheter_Survival_Plot.png" style=" height: 480px; width: 672px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX37"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Summary of Censored and Uncensored Values</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.CENSORSUMMARY">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">control_var</th>
+<th class="r header" scope="col">Stratum</th>
+<th class="r header" scope="col">SCCathDelay_binary</th>
+<th class="r header" scope="col">Total</th>
+<th class="r header" scope="col">Failed</th>
+<th class="r header" scope="col">Censored</th>
+<th class="r header" scope="col">PctCens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">&nbsp;</td>
+<td class="r data">1</td>
+<td class="r data">Cath rem &lt; 24h</td>
+<td class="r data">282</td>
+<td class="r data">84</td>
+<td class="r data">198</td>
+<td class="r data">70.21</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">&nbsp;</td>
+<td class="r data">2</td>
+<td class="r data">Late or Not removed</td>
+<td class="r data">394</td>
+<td class="r data">155</td>
+<td class="r data">239</td>
+<td class="r data">60.66</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">-</td>
+<td class="r data">T</td>
+<td class="r data">_</td>
+<td class="r data">676</td>
+<td class="r data">239</td>
+<td class="r data">437</td>
+<td class="r data">64.64</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX38"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Log-Rank Test Results</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.LOGRANKRESULTS">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">Test</th>
+<th class="r header" scope="col">ChiSq</th>
+<th class="r header" scope="col">DF</th>
+<th class="r header" scope="col">ProbChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">Log-Rank</td>
+<td class="r data">6.6746</td>
+<td class="r data">1</td>
+<td class="r data">0.0098</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
